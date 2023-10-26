@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 10px 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+header ul{
+    display: flex;
+}
+header ul li a{
+    color: #000;
+    padding: 25px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+header ul li a:hover{
+    color: #00704A;
+}
+header .menu i:nth-child(1){
+    display: none;
+}
+header .menu i:nth-child(2){
+    display: none;
+}
+.card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+.card .content-box{
+    width: 50%;
+}
+.card .content-box h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.card .content-box h1 span{
+    color: #00704A;
+}
+.content-box p{
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 30px;
+}
+.content-box a{
+    padding: 10px 15px;
+    background-color: #00704A;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.content-box a:hover{
+    background-color: #034b33;
+}
+.card .image img{
+    width: 400px;
+}
+
+#shop h2{
+    color: #00704A;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#shop .boxes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+#shop .boxes .box{
+    width: 20%;
+    height: 480px;
+    background-color: #00704A;
+    color: #fff;
+    text-align: center;
+   border: 2px solid #00704A;
+   border-radius: 10px;
+}
+
+.boxes .box img{
+    height: 280px;
+    margin: 15px 0;
+}
+.box .rating{
+    margin-top: 5px;
+}
+.box .rating i{
+    font-size: 18px;
+}
+.box h4{
+    margin: 5px 0;
+    font-size: 20px;
+}
+.box button{
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    background-color: #034b33;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.box button:hover{
+    background-color: #023f2b;
+}
+#new .new-title{
+    margin-top: 40px;
+    text-align: center;
+}
+.new-title h2{
+    font-size: 40px;
+    color: #00704A;
+    font-weight: 800;
+}
+.new-title span{
+    font-size: 14px;
+    color: rgb(107, 106, 106);
+    font-weight: 600;
+}
+#new .new-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+}
+.new-box img{
+    width: 35%;
+}
+.new-box .new-content{
+    width: 50%;
+}
+.new-content h3{
+    color: #00704A;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.new-content p{
+    margin-bottom: 20px;
+}
+.new-content p span{
+    color: #023f2b;
+    font-size: 18px;
+    font-weight: 600;
+}
+#contact h2{
+    font-size: 40px;
+    color: #00704A;
+    font-weight: 800;
+    text-align: center;
+}
+#contact .social-icons{
+    margin-top: 20px;
+    text-align: center;
+}
+.social-icons i{
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.social-icons i:hover{
+    color: #00704A;
+}
+#contact .info ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .info ul li{
+    padding: 20px;
+    cursor: pointer;
+    color: #000;
+    transition: .3s ease-in;
+}
+#contact .info ul li:hover{
+    color: #00704A;
+}
+#contact .copyright{
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 1040px){
+    .boxes .box img{
+        height: 240px;
+    }
+    #shop .boxes .box{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    header ul{
+        display: none;
+    }
+    header .menu i:nth-child(1){
+        display: block;
+    }
+    header .menu i{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .card{
+        padding: 50px;
+    }
+    .card .content-box{
+        width: 80%;
+    }
+    .card .content-box h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .content-box p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .content-box a{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .card .image img{
+        width: 200px;
+    }
+    .boxes .box img{
+        height: 240px;
+    }
+    #shop .boxes .box{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #shop .boxes{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #new .new-box{
+        padding: 20px;
+    }
+    .new-box{
+        width: 100%;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .new-box img{
+        width: 400px;
+        margin-bottom: 25px;
+    }
+    .new-box .new-content{
+        width: 100%;
+    }
+    .new-content h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .new-content p{
+        margin-bottom: 20px;
+    }
+    .new-content p span{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    header ul{
+        display: none;
+    }
+    header .menu i:nth-child(1){
+        display: block;
+    }
+    header .menu i{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .card{
+        width: 100%;
+        padding: 30px;
+    }
+    .card .content-box{
+        width: 80%;
+    }
+    .card .content-box h1{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .content-box p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .card .image img{
+        width: 150px;
+    }
+    .boxes .box img{
+        height: 240px;
+    }
+    #shop .boxes .box{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #shop .boxes{
+        width: 100%;
+        flex-direction: column;
+    }
+    .new-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .new-box img{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .new-box .new-content{
+        width: 100%;
+    }
+    .new-content h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .new-content p{
+        margin-bottom: 20px;
+    }
+    .new-content p span{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+}
+@media only screen and (max-width: 420px){
+    header ul{
+        display: none;
+    }
+    header .menu i:nth-child(1){
+        display: block;
+    }
+    header .menu i{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .card .content-box{
+        width: 80%;
+    }
+    .card .content-box h1{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .content-box p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .card .image img{
+        width: 100px;
+    }
+    .boxes .box img{
+        height: 240px;
+    }
+    #shop .boxes .box{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #shop .boxes{
+        width: 100%;
+        flex-direction: column;
+    }
+    .new-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .new-box img{
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    .new-box .new-content{
+        width: 100%;
+    }
+    .new-content h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .new-content p{
+        margin-bottom: 20px;
+    }
+    .new-content p span{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #contact h2{
+        font-size: 20px;
+    }
+
+    .social-icons i{
+        font-size: 20px;
+        padding: 15px;
+
+    }
+    #contact .info ul li{
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 320px){
+    header ul{
+        display: none;
+    }
+    header .menu i:nth-child(1){
+        display: block;
+    }
+    #logo img{
+        width: 150px;
+    }
+    header .menu i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .card .content-box{
+        width: 80%;
+    }
+    .card .content-box h1{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .content-box p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .card .image img{
+        width: 82px;
+    }
+    .boxes .box img{
+        height: 240px;
+    }
+    #shop .boxes .box{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #shop .boxes{
+        width: 100%;
+        flex-direction: column;
+    }
+    .new-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .new-box img{
+        width: 240px;
+        margin-bottom: 20px;
+    }
+    .new-box .new-content{
+        width: 100%;
+    }
+    .new-content h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .new-content p{
+        margin-bottom: 20px;
+    }
+    .new-content p span{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #contact h2{
+        font-size: 20px;
+    }
+
+    .social-icons i{
+        font-size: 20px;
+        padding: 15px;
+
+    }
+    #contact .info ul li{
+        padding: 15px;
+        font-size: 12px;
+    }
+}
