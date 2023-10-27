@@ -51,7 +51,9 @@ header .menu i:nth-child(2){
     margin-bottom: 30px;
 }
 .card .content-box h1 span{
+    font-size: 70px;
     color: #00704A;
+    font-weight: 700;
 }
 .content-box p{
     font-size: 22px;
